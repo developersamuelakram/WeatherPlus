@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/tools">
+    <com.example.weatherplus.activities.view.LocationEditTextPreference
+        android:defaultValue="@string/pref_location_default"
+        android:inputType="text"
+        android:key="@string/pref_location_key"
+        android:singleLine="true"
+        android:title="@string/pref_location_title"
+        custom:minLength="3" />
+
+    <ListPreference
+        android:defaultValue="@string/pref_units_default"
+        android:dialogTitle="@string/pref_units_title"
+        android:entries="@array/unit_entries"
+        android:entryValues="@array/unit_entryValues"
+        android:key="@string/pref_units_key"
+        android:title="@string/pref_units_title">
+
+    </ListPreference>
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_notification_key"
+        android:title="@string/pref_title_notification" />
+
+</PreferenceScreen>
